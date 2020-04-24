@@ -19,7 +19,7 @@ describe('InstallSSHKey Suite', function () {
 
         testRunner.run();
 
-        assert(testRunner.stderr.length === 0, 'should not have written to stderr');
+        assert.equal(testRunner.stderr.length, 0, 'should not have written to stderr');
         assert(testRunner.succeeded, 'task should have succeeded');
 
         done();
@@ -33,7 +33,7 @@ describe('InstallSSHKey Suite', function () {
 
         testRunner.run();
 
-        assert(testRunner.stderr.length === 0, 'should not have written to stderr');
+        assert.equal(testRunner.stderr.length, 0, 'should not have written to stderr');
         assert(testRunner.succeeded, 'task should have succeeded');
 
         done();
